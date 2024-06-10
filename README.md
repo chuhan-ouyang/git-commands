@@ -94,5 +94,15 @@ git branch -f main HEAD~3 # Reassign main to 3 commits before HEAD
 
 #### :notebook: _Pull Request Conflicts_
 
+#### :notebook: _Git Reset, Revert_
+1. Git reset: move local branch reference backward
+```bash
+git reset HEAD~1 # reset the head of main back by 1
+```
+2. Git revert: move remote branch reference backward
+```bash
+git revert HEAD # reset the head of remote branch back by 1
+```
+
 #### :notebook: _Interactive Staging_
 
