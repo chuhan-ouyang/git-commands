@@ -1,6 +1,6 @@
 # git-commands
 
-## TODO
+#### TODO
 1. merge, rebase
 2. merge/pull/rebase conflicts
 3. cherrypick
