@@ -1,6 +1,6 @@
 # :pencil: Git Commands Summary
 
-#### :notebook: TODO
+#### :notebook: _TODO_
 1. merge, rebase
 2. merge/pull/rebase conflicts
 3. cherrypick
@@ -12,7 +12,7 @@
 9. before switching to another branch, how to save your work
 10. git branch/merge diff seq
 
-#### :notebook: Creating Branches
+#### :notebook: _Creating Branches_
 1. git branch is for creating new branch, git checkout is to switched to a created branch
 2. Create a new local branch called newImage
 ```bash
@@ -27,7 +27,7 @@ $ git checkout newImage
 $ git checkout -b newImage
 ```
 
-#### :notebook: Merging Branches
+#### :notebook: _Merging Branches_
 1. Merge b1 into b2: create a new commit in b2 that has parents in both b1 and b2
 :star:  2. Merge b1 into b2, now b2 has work in b1 and b2
 ```bash
@@ -41,9 +41,9 @@ $ git checkout b1
 $ git merge b2
 ```
 
-#### :notebook: Merging Branches Conflicts
+#### :notebook: _Merging Branches Conflicts_
 
-#### :notebook: Pull Conflicts
+#### :notebook: _Pull Conflicts_
 
 #### :notebook: Rebase
 1. Rebase b1 onto b2: apply b1 commits on top of b2 -> resulting in linear history of commits
@@ -60,19 +60,19 @@ $ git checkout b2
 $ git rebase b1
 ```
 
-#### :notebook: Rebase Conflicts
+#### :notebook: _Rebase Conflicts_
 
-#### :notebook: Cherry Pick
+#### :notebook: _Cherry Pick_
 
-#### :notebook: Detach Head
+#### :notebook: _Detach Head_
 
-#### :notebook: Remote
+#### :notebook: _Remote_
 
-#### :notebook: Upstream
+#### :notebook: _Upstream_
 
-#### :notebook: Pull Request 
+#### :notebook: _Pull Request_
 
-#### :notebook: Pull Request Conflicts
+#### :notebook: _Pull Request Conflicts_
 
-#### :notebook: Interactive Staging
+#### :notebook: _Interactive Staging_
 
