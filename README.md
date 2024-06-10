@@ -11,6 +11,8 @@
 8. interactive staging
 9. before switching to another branch, how to save your work
 10. git branch/merge diff seq
+11. fast forward
+12. force push, when to use
 
 #### :notebook: _Creating Branches_
 1. git branch is for creating new branch, git checkout is to switched to a created branch
@@ -45,7 +47,7 @@ $ git merge b2
 
 #### :notebook: _Pull Conflicts_
 
-#### :notebook: Rebase
+#### :notebook: _Rebase_
 1. Rebase b1 onto b2: apply b1 commits on top of b2 -> resulting in linear history of commits
 :star:  2. Rebase b1 onto b2, now b2 has the work in b1 and b2
 ```bash
@@ -65,6 +67,23 @@ $ git rebase b1
 #### :notebook: _Cherry Pick_
 
 #### :notebook: _Detach Head_
+:star: 1. HEAD = most recent commit in the working tree, usually points to a branch (each branch pts to its most recent commit)
+```bash
+$ git log -1 HEAD # show info about head
+```
+2. Detach head = attaching head to a commit instead of a branch
+:star: 3. Move head around: detach head from branch b1 and attach head to commit C1
+```bash
+git checkout C1 # commit hash
+```
+4. Move head around: checkout commit right before curr commit of branch b1, also detach head
+```bash
+git checkout b1^ # head is now at the parent of b1
+```
+:star: 5. Force reassign branch to another commit
+```bash
+git branch -f main HEAD~3 # Reassign main to 3 commits before HEAD
+```
 
 #### :notebook: _Remote_
 
