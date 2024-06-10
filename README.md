@@ -13,6 +13,7 @@
 10. git branch/merge diff seq
 11. fast forward
 12. force push, when to use
+13. Reversing changes/commits/modify, amend
 
 #### :notebook: _Creating Branches_
 1. git branch is for creating new branch, git checkout is to switched to a created branch
