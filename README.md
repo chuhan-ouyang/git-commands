@@ -10,27 +10,27 @@
 7. pull request conflicts
 8. interactive staging
 
-## Merge
+#### Merge
 
-## Merge Conflicts
+#### Merge Conflicts
 
-## Pull Conflicts
+#### Pull Conflicts
 
-## Rebase
+#### Rebase
 
-## Rebase Conflicts
+#### Rebase Conflicts
 
-## Cherry Pick
+#### Cherry Pick
 
-## Detach Head
+#### Detach Head
 
-## Remote
+#### Remote
 
-## Upstream
+#### Upstream
 
-## Pull Request 
+#### Pull Request 
 
-## Pull Request Conflicts
+#### Pull Request Conflicts
 
-## Interactive Staging
+#### Interactive Staging
 
