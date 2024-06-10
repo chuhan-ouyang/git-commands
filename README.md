@@ -16,15 +16,15 @@
 1. git branch is for creating new branch, git checkout is to switched to a created branch
 2. Create a new local branch called newImage
 ```bash
-git branch newImage
+$ git branch newImage
 ```
 3. Checkout a created branch (switch), either a local created branch or remote branch
 ```bash
-git checkout newImage
+$ git checkout newImage
 ```
 4. Create a new branch and switch to it at the same time
 ```bash
-git checkout -b newImage
+$ git checkout -b newImage
 ```
 
 #### Merging Branches
@@ -32,13 +32,13 @@ git checkout -b newImage
 2. Merge b1 into b2, now b2 has work in b1 and b2
 ```bash
 # checkout the branch that is being merged into
-git checkout b2 # into branch
-git merge b1 # action branch
+$ git checkout b2 # into branch
+$ git merge b1 # action branch
 ```
 3. Merge b2 into b1, now b1 has work in b1 and b2
 ```bash
-git checkout b1
-git merge b2
+$ git checkout b1
+$ git merge b2
 ```
 
 #### Merging Branches Conflicts
@@ -50,14 +50,14 @@ git merge b2
 2. Rebase b1 onto b2, now b2 has the work in b1 and b2
 ```bash
 # checkout the branch that is the action branch
-git checkout b1 # action branch
-git rebase b2 # base branch
+$ git checkout b1 # action branch
+$ git rebase b2 # base branch
 # now, b2 will have additional commits from b1
 ```
 3. Rebase b2 onto b1, now b1 has the work in b1 and b2
 ```bash
-git checkout b2
-git rebase b1
+$ git checkout b2
+$ git rebase b1
 ```
 
 #### Rebase Conflicts
