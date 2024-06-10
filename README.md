@@ -83,6 +83,24 @@ gt cherry-pick C2 C4 # apply C2, C4, from b1 (action branch) to b2
 $ git rebase -i HEAD~x
 # changes with modify, reorder, drop will be shown in the new history
 ```
+4. Can be used to just use some, but not all, commits in the history
+
+#### :notebook: _Modifying Commit Early in History_
+1. Case: modify commit the previous commit (C2) in current history (C2, C1)
+```bash
+# use staging to move previous commit to top
+$ git rebase -i HEAD~2
+
+# move order to C1, C2
+
+# amend modify latest commit
+$ git commit --amend
+
+# re-order commits back to how they were
+$ git rebase -i HEAD~2
+
+#move order to C2, C1
+```
 
 #### :notebook: _Detach Head_
 :star: 1. HEAD = most recent commit in the working tree, usually points to a branch (each branch pts to its most recent commit)
