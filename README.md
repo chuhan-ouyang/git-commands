@@ -67,12 +67,12 @@ $ git rebase b1
 #### :notebook: _Rebase Conflicts_
 
 #### :notebook: _Cherry Pick_
-1. Cherry-pick commits from b1 to b2: copy some commits from b1 and apply to b2
+1. Cherry-pick commits from b1 to head: copy some commits from b1 and apply to current head
 ```
 # checkout the base branch
-git checkout b2
-gt cherry-pick C2 C4 # apply C2, C4, from b1 (action branch) to b2
-# now, c2', c4' will pop upon b1 in that order
+git checkout b2 # target is b2's head
+gt cherry-pick C2 C4 # apply C2, C4, from b1 (action branch) to b2's head
+# now, c2', c4' will pop upon after b2's previous head, in that order
 ```
 
 #### :notebook: _Interactive Staging_
@@ -85,7 +85,7 @@ $ git rebase -i HEAD~x
 ```
 4. Can be used to just use some, but not all, commits in the history
 
-#### :notebook: _Modifying Commit Early in History_
+#### :notebook: _Modifying Commit Early in History Using Rebase & Amend_
 1. Case: modify commit the previous commit (C2) in current history (C2, C1)
 ```bash
 # use staging to move previous commit to top
@@ -101,6 +101,18 @@ $ git rebase -i HEAD~2
 
 #move order to C2, C1
 ```
+
+#### :notebook: _Modifying Commit Early in History Using Amend & Cherry-Pick_
+1. Case: modify c2 commit in b2, and then get c3, c2' onto b1
+```bash
+git checkout b2
+git commit --amend
+
+git checkout b1
+git cherry-pick c3
+git cherry-pick c2' # modified c2 version
+```
+
 
 #### :notebook: _Detach Head_
 :star: 1. HEAD = most recent commit in the working tree, usually points to a branch (each branch pts to its most recent commit)
