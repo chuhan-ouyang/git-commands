@@ -14,6 +14,7 @@
 11. fast forward
 12. force push, when to use
 13. Reversing changes/commits/modify, amend
+14. Squash/combine commits
 
 #### :notebook: _Creating Branches_
 1. git branch is for creating new branch, git checkout is to switched to a created branch
@@ -66,6 +67,22 @@ $ git rebase b1
 #### :notebook: _Rebase Conflicts_
 
 #### :notebook: _Cherry Pick_
+1. Cherry-pick commits from b1 to b2: copy some commits from b1 and apply to b2
+```
+# checkout the base branch
+git checkout b2
+gt cherry-pick C2 C4 # apply C2, C4, from b1 (action branch) to b2
+# now, c2', c4' will pop upon b1 in that order
+```
+
+#### :notebook: _Interactive Staging_
+1. Similar to cherry-pick: choose which commands from action branch to copy and apply to base branch
+2. Change order, choose/drop
+3. Modify, reorder, and drop last x commits (including HEAD)
+```bash
+$ git rebase -i HEAD~x
+# changes with modify, reorder, drop will be shown in the new history
+```
 
 #### :notebook: _Detach Head_
 :star: 1. HEAD = most recent commit in the working tree, usually points to a branch (each branch pts to its most recent commit)
