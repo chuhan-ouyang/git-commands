@@ -65,6 +65,12 @@ $ git checkout b2
 $ git rebase b1
 ```
 
+:star: 4. Rebase specifying both branches
+```bash
+$ git rebase [basebranch] [topicbranch]
+# now topic branch's commits will be applied on base
+```
+
 #### :notebook: _Rebase Conflicts_
 
 #### :notebook: _Cherry Pick_
