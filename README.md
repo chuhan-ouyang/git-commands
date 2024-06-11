@@ -49,7 +49,7 @@ $ git merge b2
 
 #### :notebook: _Pull Conflicts_
 
-#### :notebook: _Rebase
+#### :notebook: _Rebase_
 :star: 1. Rebase topic branch onto base branch: move topic branch's head along by applying the topic branch's commits on top of (after) base branch commits in a linear history
 Note: later, can rebase base branch on top of topic branch so base branch can move along to the same "combined" head as the topic branch
 ```bash
