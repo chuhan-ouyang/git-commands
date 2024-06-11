@@ -49,26 +49,12 @@ $ git merge b2
 
 #### :notebook: _Pull Conflicts_
 
-#### :notebook: _Rebase_
-1. Rebase b1 onto b2: apply b1 commits on top of b2 -> resulting in linear history of commits
-
-:star:  2. Rebase b1 onto b2, now b2 has the work in b1 and b2
-```bash
-# checkout the branch that is the action branch
-$ git checkout b1 # action branch
-$ git rebase b2 # base branch
-# now, b2 will have additional commits from b1
-```
-:star:  3. Rebase b2 onto b1, now b1 has the work in b1 and b2
-```bash
-$ git checkout b2
-$ git rebase b1
-```
-
-:star: 4. Rebase specifying both branches
+#### :notebook: _Rebase
+:star: 1. Rebase topic branch onto base branch: move topic branch's head along by applying the topic branch's commits on top of (after) base branch commits in a linear history
+Note: later, can rebase base branch on top of topic branch so base branch can move along to the same "combined" head as the topic branch
 ```bash
 $ git rebase [basebranch] [topicbranch]
-# now topic branch's commits will be applied on base
+# now topic branch's commits will be applied on top of base, and topic branch's head will be updated
 ```
 
 #### :notebook: _Rebase Conflicts_
