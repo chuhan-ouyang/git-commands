@@ -51,6 +51,7 @@ $ git merge b2
 
 #### :notebook: _Rebase_
 1. Rebase b1 onto b2: apply b1 commits on top of b2 -> resulting in linear history of commits
+
 :star:  2. Rebase b1 onto b2, now b2 has the work in b1 and b2
 ```bash
 # checkout the branch that is the action branch
