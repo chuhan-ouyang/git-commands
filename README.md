@@ -6,7 +6,7 @@
 3. rebase conflict
 5. cherrypick test again
 6. detach head and force head again
-7. remote/upstream
+7. remote/origin/upstream
 8. pull request
 9. pull request conflicts
 10. interactive staging, more usages
@@ -127,8 +127,35 @@ git branch -f main HEAD~3 # Reassign main to 3 commits before HEAD
 ```
 
 #### :notebook: _Remote_
+:star: remote repo = server copy of repo
+:star: each remote as a name, like origin
+:star: after adding a remote repo, there are remote branches, reflecting the state of the branches when we last talked to the servers
+* ex. origin(<remote name>)<branch name>
+
+#### :notebook: _Fetch_
+:star: fetch data from remote repo, updating remote branches states in local repo
+:star: fetch latest commits from remote repo to local remote branches, and update the head of local remote branches to latest commit
+```bash
+$ git fetch
+```
+:star: does not update the local non-remote branches
+
+#### :notebook: _Pull_
+* Fetch remote branch and merge remote branch into local branch
+* Equivalent commands
+```bash
+git checkout main
+git pull 
+
+# same as
+git checkout main
+git fetch
+git merge origin/main
+```
 
 #### :notebook: _Upstream_
+
+#### :notebook: _Forks_
 
 #### :notebook: _Pull Request_
 
