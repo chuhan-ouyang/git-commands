@@ -6,7 +6,7 @@
 3. rebase conflict
 5. cherrypick test again
 6. detach head and force head again
-7. remote/origin/upstream
+7. remote/upstream
 8. upstream in regards to pulls
 9. pull request
 10. pull request conflicts
@@ -38,8 +38,8 @@ $ git checkout -b newImage
 :star:  2. Merge b1 into b2, now b2 has work in b1 and b2
 ```bash
 # checkout the branch that is being merged into
-$ git checkout b2 # into branch
-$ git merge b1 # action branch
+$ git checkout b2 # base branch
+$ git merge b1 # topic branch
 ```
 :star:  3. Merge b2 into b1, now b1 has work in b1 and b2
 ```bash
@@ -50,6 +50,39 @@ $ git merge b2
 #### :notebook: _Merging Branches Conflicts_
 
 #### :notebook: _Pull Conflicts_
+* After you have a local commit, and then try pulling in new commits from remote, remote conflicts with local commit
+* Occurs when pulling after a local commit, which happens when pushing a local commit (notified with need to pull first)
+* The local commit to push needs to be based off of the most recent remote commit
+
+#### :notebook: _Resolving Pull Conflicts Using Rebasing_
+```bash
+$ git checkout main
+$ git fetch # origin/main will now have remote commits
+$ git rebase origin/main # rebase main onto origin/main
+# now, main commits will be applied on top of origin/main
+# main commits are now based off the most recent remote commits
+$ git push
+```
+* Equivalently: Think applying main commits on top of all remote commits
+```bash
+$ git checkout main
+$ git pull --rebase
+$ git push
+```
+
+#### :notebook: _Resolving Pull Conflicts Using Merging_
+```bash
+$ git checkout main
+$ git fetch # origin/main will now have remote commits
+$ git merge origin/main # create new commit in main to incorporate both main commits and remote new commits
+$ git push # latest commit is based on the most recent remote commits
+```
+* Equivalently: Think creating new commit with both main and remote commits
+```bash
+$ git checkout main
+$ git pull
+$ git push
+```
 
 #### :notebook: _Rebase_
 :star: 1. Rebase topic branch onto base branch: move topic branch's head along by applying the topic branch's commits on top of (after) base branch commits in a linear history
@@ -132,7 +165,7 @@ git branch -f main HEAD~3 # Reassign main to 3 commits before HEAD
 
 #### :notebook: _Remote_
 :star: remote repo = server copy of repo
-:star: each remote as a name, like origin
+:star: each remote as a name. Typically, remote is named origin
 :star: after adding a remote repo, there are remote branches, reflecting the state of the branches when we last talked to the servers
 * ex. origin(<remote name>)<branch name>
 
@@ -155,6 +188,13 @@ git pull
 git checkout main
 git fetch
 git merge origin/main
+```
+
+#### :notebook: _Push_
+* Push new commit to remote and local remote branches
+```bash
+$ git checkout main
+$ git push
 ```
 
 #### :notebook: _Upstream_
