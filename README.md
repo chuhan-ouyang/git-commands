@@ -7,10 +7,11 @@
 5. cherrypick test again
 6. detach head and force head again
 7. remote/origin/upstream
-8. pull request
-9. pull request conflicts
-10. interactive staging, more usages
-11. before switching to another branch, how to save your work
+8. upstream in regards to pulls
+9. pull request
+10. pull request conflicts
+11. interactive staging, more usages
+12. before switching to another branch, how to save your work
 13. fast forward
 14. force push, when to use
 15. Reversing changes/commits/modify, amend practice
