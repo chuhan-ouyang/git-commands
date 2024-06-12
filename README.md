@@ -17,6 +17,7 @@
 15. Reversing changes/commits/modify, amend practice
 16. Squash/combine commits
 17. git stash, pop, apply
+18. reset hard
 
 #### :notebook: _Creating Branches_
 1. git branch is for creating new branch, git checkout is to switched to a created branch
