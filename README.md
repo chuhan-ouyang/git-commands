@@ -194,16 +194,18 @@ git merge origin/main
 * Push new commit to remote and local remote branches
 ```bash
 $ git checkout main
-$ git push
+$ git push (<remote name>) (<branch name>)
 ```
+
+#### :notebook: _Pull Request_
+* Have a feature branch and set remote to track that
+* Send pull request from feature to main (protected branch)
+
+#### :notebook: _Pull Request Conflicts_
 
 #### :notebook: _Upstream_
 
 #### :notebook: _Forks_
-
-#### :notebook: _Pull Request_
-
-#### :notebook: _Pull Request Conflicts_
 
 #### :notebook: _Git Reset, Revert_
 1. Git reset: move local branch reference backward
