@@ -1,20 +1,20 @@
 # :pencil: Git Commands Summary
 
 #### :notebook: _TODO_
-1. merge, rebase
-2. merge/pull/rebase conflicts
-3. cherrypick
-4. detach head
-5. remote/upstream
-6. pull request
-7. pull request conflicts
-8. interactive staging
-9. before switching to another branch, how to save your work
-10. git branch/merge diff seq
-11. fast forward
-12. force push, when to use
-13. Reversing changes/commits/modify, amend
-14. Squash/combine commits
+1. merge conflict
+2. pull conflict
+3. rebase conflict
+5. cherrypick test again
+6. detach head and force head again
+7. remote/upstream
+8. pull request
+9. pull request conflicts
+10. interactive staging, more usages
+11. before switching to another branch, how to save your work
+13. fast forward
+14. force push, when to use
+15. Reversing changes/commits/modify, amend practice
+16. Squash/combine commits
 
 #### :notebook: _Creating Branches_
 1. git branch is for creating new branch, git checkout is to switched to a created branch
