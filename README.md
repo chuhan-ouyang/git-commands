@@ -56,6 +56,8 @@ Note: later, can rebase base branch on top of topic branch so base branch can mo
 $ git rebase [basebranch] [topicbranch]
 # now topic branch's commits will be applied on top of base, and topic branch's head will be updated
 ```
+![image](https://github.com/chuhan-ouyang/git-commands/assets/112202738/e646a623-639b-42e8-920c-7e16926325ff)
+
 
 #### :notebook: _Rebase Conflicts_
 
