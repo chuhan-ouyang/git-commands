@@ -30,6 +30,10 @@ $ git checkout newImage
 ```bash
 $ git checkout -b newImage
 ```
+5. Create a new branch, switch to it, and track some remote branch
+```bash
+$ git checkout -b totallyNotMain o/main
+```
 
 #### :notebook: _Merging Branches_
 1. Merge b1 into b2: create a new commit in b2 that has parents in both b1 and b2
