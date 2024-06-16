@@ -1,21 +1,18 @@
 # :pencil: Git Commands Summary
 
 #### :notebook: _TODO_
-1. merge conflict
-2. pull conflict
-3. rebase conflict
+1. rebase -i
+  1. 1Reversing changes/commits/modify, amend practice
+  1. 2Squash/combine commits
+3. merge conflict
+4. rebase conflict
 5. cherrypick test again
 6. detach head and force head again
-7. remote/upstream
-8. upstream in regards to pulls
-9. pull request
+7. remote(orgin)/upstream
 10. pull request conflicts
-11. interactive staging, more usages
 12. before switching to another branch, how to save your work
 13. fast forward
 14. force push, when to use
-15. Reversing changes/commits/modify, amend practice
-16. Squash/combine commits
 17. git stash, pop, apply
 18. reset hard
 
