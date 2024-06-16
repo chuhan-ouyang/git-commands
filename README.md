@@ -198,6 +198,7 @@ git merge origin/main
 $ git checkout main
 $ git push (<remote name>) (<branch name>)
 ```
+* When pushing, the head should be checked out (not detached) on the tip of a remote tracking local branch
 
 #### :notebook: _Pull Request_
 * Have a feature branch and set remote to track that
