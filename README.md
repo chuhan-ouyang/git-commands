@@ -22,7 +22,7 @@
 ```bash
 $ git branch newImage
 ```
-3. Checkout a created branch (switch), either a local created branch or remote branch
+3. Checkout a created branch (switch), either a local created branch or remote branch. If newImage is remote, then you will have a local newImage that is set to track remote newImage branch.
 ```bash
 $ git checkout newImage
 ```
