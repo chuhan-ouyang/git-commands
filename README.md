@@ -196,7 +196,7 @@ git merge origin/main
 * Push new commit to remote and local remote branches
 ```bash
 $ git checkout main
-$ git push (<remote name>) (<branch name>)
+$ git push origin <source>:<destination>
 ```
 * When pushing, the head should be checked out (not detached) on the tip of a remote tracking local branch
 
