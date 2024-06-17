@@ -138,6 +138,17 @@ git rebase -i HEAD~n # modify last n commit
 git rebase -i HEAD~n # modify last n commit
 # use vim to change pick to squash if you want to squash this into prev
 ```
+#### :notebook: _Splitting Past Commits_
+```bash
+git rebase -i HEAD~n
+# change pick to edit for the commit to split
+git reset HEAD~1 # unstage all files
+git add c1
+git commit -m "c1" # first part of split
+git add c2
+git commit -m "c2" # second part of split
+git rebase --continue # now, will be splitted to c1, c2
+```
 
 #### :notebook: _Interactive Staging_
 1. Similar to cherry-pick: choose which commands from action branch to copy and apply to base branch
