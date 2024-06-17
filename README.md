@@ -1,7 +1,6 @@
 # :pencil: Git Commands Summary
 
 #### :notebook: _TODO_
-  1. 2Squash/combine commits
 3. merge conflict
 4. rebase conflict
 5. 10. pull request conflicts
@@ -131,6 +130,13 @@ git push --force
 ```bash
 git rebase -i HEAD~n # modify last n commit
 # use vim to reorder, from old to latest
+```
+#### :notebook: _Squashing Multiple Past Commits_
+* Use interactive rebase to squash commit
+* pick c1, squash c2 will squash c2 into the older commit c1 -> appear as 1 commit
+```bash
+git rebase -i HEAD~n # modify last n commit
+# use vim to change pick to squash if you want to squash this into prev
 ```
 
 #### :notebook: _Interactive Staging_
