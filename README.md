@@ -108,12 +108,16 @@ gt cherry-pick C2 C4 # apply C2, C4, from b1 (action branch) to b2's head
 ```
 
 
-#### :notebook: _Modifying a Pushed Commit_
+#### :notebook: _Modifying the Latest Commit_
 ```bash
 # make changes to files, like git add new.cpp, git rm old.cpp
 git commit --amend # modify commit message (locally)
 git push --force
 ```
+
+#### :notebook: _Modifying Multiple Past Commits_
+
+
 
 #### :notebook: _Interactive Staging_
 1. Similar to cherry-pick: choose which commands from action branch to copy and apply to base branch
