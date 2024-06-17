@@ -150,6 +150,12 @@ git commit -m "c2" # second part of split
 git rebase --continue # now, will be splitted to c1, c2
 ```
 
+#### :notebook: _Deleting Past Commits_
+```bash
+git rebase -i HEAD~n
+# change edit to drop for the commit to drop
+```
+
 #### :notebook: _Interactive Staging_
 1. Similar to cherry-pick: choose which commands from action branch to copy and apply to base branch
 2. Change order, choose/drop
