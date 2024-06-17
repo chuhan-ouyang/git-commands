@@ -1,15 +1,14 @@
 # :pencil: Git Commands Summary
 
 #### :notebook: _TODO_
-1. rebase -i
-  1. 1Reversing changes/commits/modify, amend practice
   1. 2Squash/combine commits
 3. merge conflict
 4. rebase conflict
-5. cherrypick test again
-6. detach head and force head again
-7. remote(orgin)/upstream
-10. pull request conflicts
+5. 10. pull request conflicts
+6. cherrypick test again
+7. detach head and force head again
+8. reset hard
+9. remote(orgin)/upstream
 12. before switching to another branch, how to save your work
 13. fast forward
 14. force push, when to use
@@ -126,7 +125,13 @@ git commit --amend # solidified amend
 git rebase --continue
 git push --force 
 ```
-
+#### :notebook: _Reordring Multiple Past Commits_
+* Use interactive rebase to reorder commits
+* In interactive staging, commits will be listed/applied from oldest - latest
+```bash
+git rebase -i HEAD~n # modify last n commit
+# use vim to reorder, from old to latest
+```
 
 #### :notebook: _Interactive Staging_
 1. Similar to cherry-pick: choose which commands from action branch to copy and apply to base branch
