@@ -116,7 +116,16 @@ git push --force
 ```
 
 #### :notebook: _Modifying Multiple Past Commits_
-
+* Use interactive rebase to edit each command, preserve original order and structure
+```bash
+git rebase -i HEAD~n # modify last n commit
+# change pick to edit for the commit to edit
+# one by one ...
+git add .... # new changes
+git commit --amend # solidified amend
+git rebase --continue
+git push --force 
+```
 
 
 #### :notebook: _Interactive Staging_
